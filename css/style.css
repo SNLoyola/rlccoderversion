@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap");
+.contacto_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CDCCD2;
+  height: 71vh;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: black;
+  border-radius: 25px;
+}
+.form_container input, .form_container textarea, .form_container select {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  color: black;
+  background-color: #fff;
+  outline: none;
+  text-align: center;
+}
+.form_container input::placeholder, .form_container textarea::placeholder {
+  font-size: 14px;
+}
+.form_container label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.form_container form {
+  padding: 20px 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form_container form .usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+.form_container form .usuario .email {
+  width: 220px;
+}
+.form_container form .procedencia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form_container form .procedencia input {
+  appearance: textfield;
+}
+.form_container form .procedencia input[type=number] {
+  -moz-appearance: textfield; /* Para Firefox */
+  appearance: textfield; /* Para otros navegadores */
+}
+.form_container form .procedencia input[type=number]::-webkit-outer-spin-button,
+.form_container form .procedencia input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form_container form .mensaje_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.form_container form .mensaje_box textarea {
+  width: 420px;
+  height: 220px;
+}
+.form_container form .mensaje_box .mensaje_box_item {
+  padding: 7px;
+}
+.form_container form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #477967;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  width: 100%;
+}
+.form_container select option {
+  color: black;
+}
+
+@media (max-widith: 768px) {
+  header {
+    background-color: green;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+}
+
+body {
+  background-color: black;
+}
+body h1, body h2, body h3, body h4, body h5, body p {
+  font-family: "Baskervville SC";
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+header nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Baskervville SC";
+  font-weight: 400;
+  font-size: x-large;
+  font-style: normal;
+}
+header nav .menu_personalizado {
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+header nav ul li a:hover {
+  color: #fff;
+}
+header nav .buscador input {
+  width: 390px;
+}
+header nav .buscador button {
+  color: #fff;
+  border-color: #fff;
+}
+
+.logo_marca {
+  width: 200px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.button_personalizado {
+  background-color: black;
+  color: #fff;
+  margin-left: 20px;
+  border: none;
+}
+.button_personalizado:hover, .button_personalizadoactive, .button_personalizadofocus {
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.item_personalizado {
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: #FFF;
+}
+
+.dropdown_personalizado {
+  background-color: black;
+  color: #fff;
+  border: 1px solid #FFF;
+}
+.dropdown_personalizado:hover {
+  background-color: black;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+.dropdown_personalizado li {
+  margin: 0 5px;
+}
+
+main h1, main h2 {
+  text-align: center;
+}
+main section {
+  height: 280px;
+  margin: 20px 0;
+  display: flex;
+}
+main section .card {
+  height: 250px;
+}
+main section .card a {
+  text-decoration: none;
+  color: black;
+}
+main section .card a:hover {
+  color: #198754;
+}
+main section .card p {
+  color: black;
+  text-align: center;
+}
+main section div {
+  margin: 10px;
+}
+main section .card-body {
+  text-align: left;
+}
+
+.acercade_main {
+  margin: 20px;
+}
+.acercade_main h2, .acercade_main h3 {
+  font-size: 38px;
+}
+.acercade_main .introduccion {
+  display: flex;
+}
+.acercade_main .introduccion p {
+  font-size: 26px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  height: 80px;
+}
+footer img {
+  width: 180px;
+  margin: 0 10px;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+footer ul img {
+  width: 40px;
+  transition: transform 0.3s ease;
+}
+footer ul img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-widith: 768px) {
+  * {
+    background-color: green;
+  }
+}
+@media (max-widith: 768px) {
+  header {
+    background-color: green;
+  }
+}
+@media (max-widith: 768px) {
+  header {
+    background-color: green;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

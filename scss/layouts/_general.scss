@@ -1,0 +1,211 @@
+@import "../utilities/colores";
+@import "../layouts/mediaquere";
+$fuentetitulos: "Baskervville SC";
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+}
+
+body{
+    background-color: black;
+
+    h1,h2,h3,h4,h5, p{
+        font-family: $fuentetitulos;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+    nav{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $fuentetitulos;
+        font-weight: 400;
+        font-size: x-large;
+        font-style: normal;
+        .menu_personalizado{
+            display: flex;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li{
+                margin-right: 20px;
+
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .buscador{
+            input{
+                width: 390px;
+            }
+            button{
+                color: #fff;
+                border-color: #fff;
+                // &:hover{
+                //     background-color: aquamarine;
+                // }
+            }
+
+        }
+    }
+
+}
+
+.logo_marca{
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+
+.button_personalizado{
+    background-color: black;
+    color: #fff;
+    margin-left: 20px;
+    border: none;
+        &:hover, &active, &focus{
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
+}
+ 
+.item_personalizado {
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: #FFF;
+    // &:hover{
+        
+    // }
+}
+
+
+.dropdown_personalizado{
+    background-color: black;
+    color: #fff;
+    border: 1px solid #FFF;
+    
+        &:hover{
+            background-color:black;
+            color: #FFF;
+            border: 1px solid #FFF;
+        }
+    li{
+        margin:0 5px;
+    }
+}
+
+main{
+    h1,h2{
+        text-align: center;
+    }
+    section{
+        height: 280px;
+        margin: 20px 0;
+        display: flex;
+        .card{
+            height: 250px;
+            
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: nth($colores, 1);
+                }
+            }
+            p{
+                color: black;
+                text-align: center;
+            }
+        }
+        div{
+            margin: 10px;
+        }
+        .card-body{
+            text-align: left; 
+        }
+    }
+    
+}
+.acercade_main{
+    margin: 20px;
+    h2,h3{
+        font-size: 38px;
+    }
+    .introduccion{
+        display: flex;
+        p{
+            font-size: 26px;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 80px;
+    img{
+        width: 180px;
+        margin: 0 10px;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        img{
+            width: 40px;
+            transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(1.10);
+            }
+        }
+        
+    }
+    
+    
+}
+@media (min-widith: 768px){
+    *{
+        background-color: green;
+    }
+}
+
+@media (max-widith: 768px){
+    header{
+        background-color: green;
+        
+    }
+
+}
