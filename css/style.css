@@ -110,8 +110,8 @@
     display: flex;
     background-color: green;
   }
-  header .buscador input {
-    width: 56vh;
+  header nav .buscador input {
+    width: 26vh;
   }
   .menu_personalizado {
     position: relative;
@@ -209,7 +209,7 @@ header nav ul li a:hover {
   color: #fff;
 }
 header nav .buscador input {
-  width: 25vh;
+  width: 62vh;
 }
 header nav .buscador button {
   color: #fff;
@@ -344,8 +344,8 @@ footer ul img:hover {
     display: flex;
     background-color: green;
   }
-  header .buscador input {
-    width: 56vh;
+  header nav .buscador input {
+    width: 26vh;
   }
   .menu_personalizado {
     position: relative;
