@@ -1,179 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap");
-@media (max-widith: 768px) {
-  header {
-    background-color: green;
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
-  color: #FFF;
-}
-
-body {
-  background-color: black;
-}
-body h1, body h2, body h3, body h4, body h5, body p {
-  font-family: "Baskervville SC";
-  font-weight: 400;
-  font-style: normal;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-header nav {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Baskervville SC";
-  font-weight: 400;
-  font-size: x-large;
-  font-style: normal;
-}
-header nav .menu_personalizado {
-  display: flex;
-}
-header nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-header nav ul li {
-  margin-right: 20px;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-header nav ul li a:hover {
-  color: #fff;
-}
-header nav .buscador input {
-  width: 390px;
-}
-header nav .buscador button {
-  color: #fff;
-  border-color: #fff;
-}
-
-.logo_marca {
-  width: 200px;
-  height: 100px;
-  margin-right: 20px;
-}
-
-.button_personalizado {
-  background-color: black;
-  color: #fff;
-  margin-left: 20px;
-  border: none;
-}
-.button_personalizado:hover, .button_personalizadoactive, .button_personalizadofocus {
-  background-color: transparent;
-  color: #fff;
-  outline: none;
-  box-shadow: none;
-  border: none;
-}
-
-.item_personalizado {
-  align-items: center;
-  text-align: center;
-  background-color: black;
-  color: #FFF;
-}
-
-.dropdown_personalizado {
-  background-color: black;
-  color: #fff;
-  border: 1px solid #FFF;
-}
-.dropdown_personalizado:hover {
-  background-color: black;
-  color: #FFF;
-  border: 1px solid #FFF;
-}
-.dropdown_personalizado li {
-  margin: 0 5px;
-}
-
-main h1, main h2 {
-  text-align: center;
-}
-main section {
-  height: 280px;
-  margin: 20px 0;
-  display: flex;
-}
-main section .card {
-  height: 250px;
-}
-main section .card a {
-  text-decoration: none;
-  color: black;
-}
-main section .card a:hover {
-  color: #198754;
-}
-main section .card p {
-  color: black;
-  text-align: center;
-}
-main section div {
-  margin: 10px;
-}
-main section .card-body {
-  text-align: left;
-}
-
-.acercade_main {
-  margin: 20px;
-}
-.acercade_main h2, .acercade_main h3 {
-  font-size: 38px;
-}
-.acercade_main .introduccion {
-  display: flex;
-}
-.acercade_main .introduccion p {
-  font-size: 26px;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  height: 80px;
-}
-footer img {
-  width: 180px;
-  margin: 0 10px;
-}
-footer ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-}
-footer ul img {
-  width: 40px;
-  transition: transform 0.3s ease;
-}
-footer ul img:hover {
-  transform: scale(1.1);
-}
-
 .contacto_body {
   display: flex;
   align-items: center;
@@ -269,9 +94,295 @@ footer ul img:hover {
   color: black;
 }
 
-@media (max-widith: 768px) {
+@media (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
   header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vh;
+  }
+  header nav {
+    display: flex;
     background-color: green;
+  }
+  header .buscador input {
+    width: 56vh;
+  }
+  .menu_personalizado {
+    position: relative;
+    float: left;
+    font-size: 1.2rem;
+    background: green;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .menu_personalizado li {
+    margin: 5px;
+  }
+  .menu_personalizado .button_personalizado {
+    margin: 5px;
+  }
+  input {
+    display: block;
+  }
+  label {
+    display: block !important;
+    color: white;
+    font-size: 40px;
+  }
+  .acercade_main {
+    background-color: red;
+    width: 100vh;
+    margin: 0;
+  }
+  .acercade_main .introduccion {
+    display: flex;
+  }
+  .acercade_main .introduccion p {
+    font-size: 0.9rem;
+  }
+  .acercade_main .introduccion img {
+    width: 500px;
+    height: 62%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+}
+
+body {
+  background-color: black;
+}
+body h1, body h2, body h3, body h4, body h5, body p {
+  font-family: "Baskervville SC";
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+header input {
+  display: none;
+}
+header .checkbtn {
+  display: none;
+}
+header nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Baskervville SC";
+  font-weight: 400;
+  font-size: x-large;
+  font-style: normal;
+}
+header nav .menu_personalizado {
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+header nav ul li a:hover {
+  color: #fff;
+}
+header nav .buscador input {
+  width: 25vh;
+}
+header nav .buscador button {
+  color: #fff;
+  border-color: #fff;
+}
+
+.logo_marca {
+  width: 200px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.button_personalizado {
+  background-color: black;
+  color: #fff;
+  margin-left: 20px;
+  border: none;
+}
+.button_personalizado:hover, .button_personalizadoactive, .button_personalizadofocus {
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.item_personalizado {
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: #FFF;
+}
+
+.dropdown_personalizado {
+  background-color: black;
+  color: #fff;
+  border: 1px solid #FFF;
+}
+.dropdown_personalizado:hover {
+  background-color: black;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+.dropdown_personalizado li {
+  margin: 0 5px;
+}
+
+main h1, main h2 {
+  text-align: center;
+}
+main section {
+  height: fit-content;
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+}
+main section .card {
+  width: 68%;
+}
+main section .card a {
+  text-decoration: none;
+  color: black;
+}
+main section .card a:hover {
+  color: #198754;
+}
+main section .card p {
+  color: black;
+  text-align: center;
+}
+main section div {
+  margin: 10px;
+}
+main section .card-body {
+  text-align: left;
+}
+
+.acercade_main {
+  margin: 20px;
+}
+.acercade_main h2, .acercade_main h3 {
+  font-size: 38px;
+}
+.acercade_main .introduccion {
+  display: flex;
+}
+.acercade_main .introduccion p {
+  font-size: 26px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  height: 80px;
+}
+footer img {
+  width: 180px;
+  margin: 0 10px;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+footer ul img {
+  width: 40px;
+  transition: transform 0.3s ease;
+}
+footer ul img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vh;
+  }
+  header nav {
+    display: flex;
+    background-color: green;
+  }
+  header .buscador input {
+    width: 56vh;
+  }
+  .menu_personalizado {
+    position: relative;
+    float: left;
+    font-size: 1.2rem;
+    background: green;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .menu_personalizado li {
+    margin: 5px;
+  }
+  .menu_personalizado .button_personalizado {
+    margin: 5px;
+  }
+  input {
+    display: block;
+  }
+  label {
+    display: block !important;
+    color: white;
+    font-size: 40px;
+  }
+  .acercade_main {
+    background-color: red;
+    width: 100vh;
+    margin: 0;
+  }
+  .acercade_main .introduccion {
+    display: flex;
+  }
+  .acercade_main .introduccion p {
+    font-size: 0.9rem;
+  }
+  .acercade_main .introduccion img {
+    width: 500px;
+    height: 62%;
   }
 }
 

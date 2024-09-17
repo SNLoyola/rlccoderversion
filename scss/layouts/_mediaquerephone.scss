@@ -1,0 +1,64 @@
+@media (max-width: 768px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vh;
+        nav{
+            display: flex;
+            background-color: green;
+        }
+        .buscador{
+            input{
+                width: 56vh;
+            }
+
+        }
+    }
+    .menu_personalizado{
+        position: relative;
+        float: left;
+        font-size: 1.2rem;
+        background:green;
+        // top: 80px;
+        // left: -500px;
+        text-align: center;
+        transition: all .5s;
+        li{
+            margin: 5px;
+        }
+        .button_personalizado{
+            margin: 5px;
+        }
+    }
+    input{
+        display: block;
+    }
+    label{
+        display: block !important;
+        color: white;
+        font-size: 40px;
+    }
+
+    .acercade_main{
+        background-color: red;
+        width: 100vh;
+        margin: 0;
+        .introduccion{
+            display: flex;
+                p{
+                    font-size: .9rem;
+                }
+            img{
+                width: 500px;
+                height: 62%;
+            }
+        }
+    }
+
+}
