@@ -1,3 +1,4 @@
+@import "../utilities/colores";
 @media (max-width: 768px){
     *{
         padding: 0;
@@ -12,37 +13,27 @@
         nav{
             display: flex;
             background-color: green;
-        .buscador{
-            input{
-                width: 26vh;
+            color: #fff;
+            .container-fluid{
+                display: flex;
+                z-index: 1;
             }
+            .buscador{
+                input{
+                    width: 76vh;
+                }
 
+            }
+            .dropdown-divider{
+                background-color: nth($colores, 8);
+            }
+            .navbar-collapse{
+                flex-basis: 100%;
+                flex-grow: 1;
+                padding: 10px;
+                background-color: black !important;
+            }
         }
-        }
-    }
-    .menu_personalizado{
-        position: relative;
-        float: left;
-        font-size: 1.2rem;
-        background:green;
-        // top: 80px;
-        // left: -500px;
-        text-align: center;
-        transition: all .5s;
-        li{
-            margin: 5px;
-        }
-        .button_personalizado{
-            margin: 5px;
-        }
-    }
-    input{
-        display: block;
-    }
-    label{
-        display: block !important;
-        color: white;
-        font-size: 40px;
     }
 
     .acercade_main{

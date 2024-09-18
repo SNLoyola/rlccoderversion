@@ -24,12 +24,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    input{
-        display: none;
-    }
-    .checkbtn{
-        display: none;
-    }
     nav{
         width: 100%;
         height: 100px;
@@ -41,7 +35,9 @@ header{
         font-size: x-large;
         font-style: normal;
         .menu_personalizado{
-            display: flex;
+            opacity: 1;
+            color: #fff;
+            
         }
         ul{
             display: flex;
@@ -61,21 +57,27 @@ header{
                 }
             }
         }
-        .buscador{
-            input{
-                width: 62vh;
-            }
-            button{
-                color: #fff;
-                border-color: #fff;
+        .navbar-collapse{
+            .item_personalizado {
+                align-items: center;
+                text-align: center;
+                background-color: black;
+                color: #FFF;
                 // &:hover{
-                //     background-color: aquamarine;
+                    
                 // }
             }
-
+            .dropdown-divider{
+                color: red;
+            }
+        }
+        .navbar-expand-lg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
-
+            
 }
 
 .logo_marca{
@@ -97,16 +99,6 @@ header{
             box-shadow: none;
             border: none;
         }
-}
- 
-.item_personalizado {
-    align-items: center;
-    text-align: center;
-    background-color: black;
-    color: #FFF;
-    // &:hover{
-        
-    // }
 }
 
 
