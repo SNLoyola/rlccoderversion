@@ -12,7 +12,7 @@
         width: 100vh;
         nav{
             display: flex;
-            background-color: green;
+            // background-color: green;
             color: #fff;
             .container-fluid{
                 display: flex;
@@ -30,14 +30,42 @@
             .navbar-collapse{
                 flex-basis: 100%;
                 flex-grow: 1;
-                padding: 10px;
-                background-color: black !important;
+                padding: 2%;
+                border-radius: 0.375rem;
+                background-color: black;
+                .item_personalizado {
+                    align-items: center;
+                    text-align: center;
+                    background-color: black;
+                    color: #FFF;
+                    margin-bottom: 2px;
+                    &:hover{
+                        color: nth($colores, 8);
+                    }
+                }
             }
+            .dropdown_personalizado{
+                background-color: black;
+                color: #fff;
+                border: 1px solid nth($colores, 8);
+                
+                    &:hover{
+                        background-color:black;
+                        color: #FFF;
+                        border: 1px solid #FFF;
+                    }
+                    li{
+                        margin:0 5px;
+                    }
+                    
+            }
+            
         }
+
     }
 
     .acercade_main{
-        background-color: red;
+        // background-color: red;
         width: 100vh;
         margin: 0;
         .introduccion{

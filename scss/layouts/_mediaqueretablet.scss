@@ -1,0 +1,85 @@
+@media (max-width: 992px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        nav{
+            display: flex;
+            background-color: green;
+            color: #fff;
+            .container-fluid{
+                display: flex;
+                z-index: 1;
+            }
+            .buscador{
+                input{
+                    width: 76vh;
+                }
+
+            }
+            .dropdown-divider{
+                background-color: nth($colores, 8);
+            }
+            .navbar-collapse{
+                flex-basis: 100%;
+                flex-grow: 1;
+                padding: 2%;
+                border-radius: 0.375rem;
+                background-color: black;
+                .item_personalizado {
+                    align-items: center;
+                    text-align: center;
+                    background-color: black;
+                    color: #FFF;
+                    margin-bottom: 2px;
+                    &:hover{
+                        color: nth($colores, 8);
+                    }
+                }
+            }
+            .dropdown_personalizado{
+                background-color: black;
+                color: #fff;
+                border: 1px solid nth($colores, 8);
+                    &::after{
+                        justify-content: space-between;
+                        align-items: center;
+                        display: flex;
+                    }
+                    &:hover{
+                        background-color:black;
+                        color: #FFF;
+                        border: 1px solid #FFF;
+                    }
+                    // li{
+                    //     margin:0 5px;
+                    // }
+                    
+            }
+            
+        }
+
+    }
+
+    .acercade_main{
+        // background-color: red;
+        width: 100vh;
+        margin: 0;
+        .introduccion{
+            display: flex;
+                p{
+                    font-size: .9rem;
+                }
+            img{
+                width: 500px;
+                height: 62%;
+            }
+        }
+    }
+}
