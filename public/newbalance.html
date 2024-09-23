@@ -15,43 +15,53 @@
 </head>
 <body>
 <header>
-        <a href="../index.html"><img class="logo_marca" src="../assets/iconos/RLCStore logo negro.png" alt="logo marca"></a>
-        <nav>
-
-
-            <div class="menu_personalizado">
-                <ul>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>    
-
-                <div class="btn-group dropend">
-                    <button class=" button_personalizado dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Zapatillas</button>
-
-                    <ul class="dropdown-menu dropdown_personalizado">
-                        <li>
-                            <a class="dropdown-item item_personalizado" href="nike.html">Nike</a>
+        <nav class="navbar navbar-expand-lg menu_personalizado">
+            <div class="container-fluid">
+                <a href="../index.html"><img class="logo_marca" src="../assets/iconos/RLCStorelogonegro.png" alt="logo marca"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class='bx bx-menu bx-lg bx-burst-hover bx-border'></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item item_personalizado">
+                            <a class="item_personalizado" href="contacto.html">Contacto</a>
                         </li>
-                        <li>
-                            <a class="dropdown-item item_personalizado" href="vans.html">Vans</a>
+                        <li class="nav-item dropend item_personalizado">
+                            <a class="item_personalizado dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Zapatillas
+                            </a>
+                            <ul class="dropdown-menu dropdown_personalizado">
+                                <li>
+                                    <a class="dropdown-item item_personalizado" href="nike.html">Nike</a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item item_personalizado" href="vans.html">Vans</a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item item_personalizado" href="adidas.html">Adidas</a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item item_personalizado" href="converse.html">Converse</a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item item_personalizado" href="newbalance.html">New Balance</a>
+                                </li>
+                                
+                                
+                            </ul>
+                           
                         </li>
-                        <li>
-                            <a class="dropdown-item item_personalizado" href="adidas.html">Adidas</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item item_personalizado" href="converse.html">Converse</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item item_personalizado" href="newbalance.html">New Balance</a>
-                        </li>
+                       
                     </ul>
-                </div>
-
-            </div>
-            <div class="buscador">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Busca tu producto" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <form class="d-flex buscador" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                </div>
             </div>
         </nav>
 </header>
@@ -60,152 +70,302 @@
 
     <h2>Nike</h2>
     <section class="rtop_5">
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/440highv2negra.jpeg" class="card-img-top" alt="Nike Green Pine">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">Numeric 440 High V2</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">440</h2>
+                    <img src="../assets/zapatillas/newb/440highv2negra.jpeg" alt="Zapatilla 440 High v2 Negra">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">440 High V2</li>
+                    <li class="list-group-itemm item2">Negro</li>
+                    <li class="list-group-itemm item3">$440 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/440v2celeste.jpeg" class="card-img-top" alt="Vans Old Skool">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">Numeric 440 V2</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">440</h2>
+                    <img src="../assets/zapatillas/newb/440v2celeste.jpeg" alt="Zapatilla Numeric 440 High v2 Celeste">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 440 V2</li>
+                    <li class="list-group-itemm item2">Celeste</li>
+                    <li class="list-group-itemm item3">$440 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/440v2negra.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">Numeric 440 V2</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">440</h2>
+                    <img src="../assets/zapatillas/newb/440v2negra.jpeg" alt="Zapatilla Numeric 440 v2 Negra">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 440 V2</li>
+                    <li class="list-group-itemm item2">Negro</li>
+                    <li class="list-group-itemm item3">$440 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/480byw.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">480</h5>
-                    
-                    <p>$350 USD</p>                   
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">480</h2>
+                    <img src="../assets/zapatillas/newb/480fblanca.jpeg" alt="Zapatilla Numeric 480 All White">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 480</li>
+                    <li class="list-group-itemm item2">All White</li>
+                    <li class="list-group-itemm item3">$480 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/480celeste.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">480</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">480</h2>
+                    <img src="../assets/zapatillas/newb/480fnegra.jpeg" alt="Zapatilla Numeric 480 All Black">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 480</li>
+                    <li class="list-group-itemm item2">All Black</li>
+                    <li class="list-group-itemm item3">$480 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section class="rtop_5">
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/550gris.jpeg" class="card-img-top" alt="Nike Green Pine">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">550</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">480</h2>
+                    <img src="../assets/zapatillas/newb/480byw.jpeg" alt="Zapatilla Numeric 480 Blanca y Negra">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 480</li>
+                    <li class="list-group-itemm item2">Negro y Blanco</li>
+                    <li class="list-group-itemm item3">$480 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/480fblanca.jpeg" class="card-img-top" alt="New Balance 480">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">480</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">480</h2>
+                    <img src="../assets/zapatillas/newb/480celeste.jpeg" alt="Zapatilla Numeric 480 Celeste">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 480</li>
+                    <li class="list-group-itemm item2">Celeste</li>
+                    <li class="list-group-itemm item3">$480 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/480fnegra.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">480</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">480</h2>
+                    <img src="../assets/zapatillas/newb/480crema.jpeg" alt="Zapatilla Numeric 480 Crema">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 480</li>
+                    <li class="list-group-itemm item2">Crema</li>
+                    <li class="list-group-itemm item3">$480 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/550negra.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">550</h5>
-                    
-                    <p>$350 USD</p>                   
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">550</h2>
+                    <img src="../assets/zapatillas/newb/550verde.jpeg" alt="Zapatilla Numeric 550 Verde">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 550</li>
+                    <li class="list-group-itemm item2">Verde</li>
+                    <li class="list-group-itemm item3">$550 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/550verde.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">550</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">550</h2>
+                    <img src="../assets/zapatillas/newb/550azul.jpeg" alt="Zapatilla Numeric 550 Azul">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 550</li>
+                    <li class="list-group-itemm item2">Azul</li>
+                    <li class="list-group-itemm item3">$450 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section class="rtop_5">
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/580blanca.jpeg" class="card-img-top" alt="Nike Green Pine">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">580</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">550</h2>
+                    <img src="../assets/zapatillas/newb/550gris.jpeg" alt="Zapatilla Numeric 550 Gris">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 550</li>
+                    <li class="list-group-itemm item2">Gris</li>
+                    <li class="list-group-itemm item3">$550 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/580negra.jpeg" class="card-img-top" alt="New Balance 480">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">580</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">550</h2>
+                    <img src="../assets/zapatillas/newb/550celeste.jpeg" alt="Zapatilla Numeric 550 Celeste">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 550</li>
+                    <li class="list-group-itemm item2">Celeste y Azul</li>
+                    <li class="list-group-itemm item3">$550 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/580verde.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">580</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">550</h2>
+                    <img src="../assets/zapatillas/newb/550negra.jpeg" alt="Zapatilla Numeric 550 Negra">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 550</li>
+                    <li class="list-group-itemm item2">Negra</li>
+                    <li class="list-group-itemm item3">$550 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/550azul.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">550</h5>
-                    
-                    <p>$350 USD</p>                   
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">580</h2>
+                    <img src="../assets/zapatillas/newb/580negra.jpeg" alt="Zapatilla 440 High v2 Negra">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 580</li>
+                    <li class="list-group-itemm item2">Negra</li>
+                    <li class="list-group-itemm item3">$580 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/newb/550celeste.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">New Balance</h4>
-                    <h5 class="card-title">550</h5>
-                    
-                    <p>$350 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">580</h2>
+                    <img src="../assets/zapatillas/newb/580verde.jpeg" alt="Zapatilla Numeric 580 Verde">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Numeric 580</li>
+                    <li class="list-group-itemm item2">Verde</li>
+                    <li class="list-group-itemm item3">$580 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
     </section>
 </main>
 
 <footer>
-    <img class="logo_footer" src="../assets/iconos/RLCStore logo negro.png" alt="foto logo">
+    <img class="logo_footer" src="../assets/iconos/RLCStorelogonegro.png" alt="foto logo">
 
     <ul>
         <li>
@@ -231,6 +391,7 @@
     </ul>
 </footer>
 
+<script src="../js/scripttarjeta.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

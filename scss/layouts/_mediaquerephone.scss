@@ -9,7 +9,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100vh;
+        width: 100%;
+        
         nav{
             display: flex;
             // background-color: green;
@@ -20,8 +21,11 @@
             }
             .buscador{
                 input{
-                    width: 76vh;
+                    margin-top: 2px;
+                    width: 70%;
+                    margin-left: 7%;
                 }
+                
 
             }
             .dropdown-divider{
@@ -55,7 +59,10 @@
                         border: 1px solid #FFF;
                     }
                     li{
-                        margin:0 5px;
+                        margin: 5px;
+                        padding: 1px;
+                        border: 1px solid nth($colores, 8);
+                        width: fit-content;
                     }
                     
             }
@@ -66,7 +73,7 @@
 
     .acercade_main{
         // background-color: red;
-        width: 100vh;
+        width: 100%;
         margin: 0;
         .introduccion{
             display: flex;

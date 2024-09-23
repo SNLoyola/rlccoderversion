@@ -108,8 +108,8 @@ header{
 
 .logo_marca{
     width: 200px;
-    height: 100px;
-    margin-right: 20px;
+    height: auto;
+    // margin-right: 20px;
 }
 
 
@@ -150,30 +150,9 @@ main{
     section{
         height: fit-content;
         width: 100%;
-        margin: 20px 0;
+        margin: 10px 0;
         display: flex;
-        .card{
-            
-            width: 68%;
-            // background-color: red;
-            a{
-                text-decoration: none;
-                color: black;
-                &:hover{
-                    color: nth($colores, 1);
-                }
-            }
-            p{
-                color: black;
-                text-align: center;
-            }
-        }
-        div{
-            margin: 10px;
-        }
-        .card-body{
-            text-align: left; 
-        }
+        padding: 20px;
     }
     
 }
@@ -186,6 +165,10 @@ main{
         display: flex;
         p{
             font-size: 26px;
+            .poderosa{
+                        color: black;
+                        font-weight: bold;
+                    }
         }
     }
 }

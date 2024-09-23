@@ -11,8 +11,9 @@
         width: 100%;
         nav{
             display: flex;
-            background-color: green;
+            // background-color: green;
             color: #fff;
+            height: 10%;
             .container-fluid{
                 display: flex;
                 z-index: 1;
@@ -68,16 +69,16 @@
     }
 
     .acercade_main{
-        // background-color: red;
-        width: 100vh;
-        margin: 0;
+        width: 90%;
+        margin: 5%;
         .introduccion{
             display: flex;
                 p{
                     font-size: .9rem;
+                    
                 }
             img{
-                width: 500px;
+                width: 20%;
                 height: 62%;
             }
         }

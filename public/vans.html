@@ -15,141 +15,241 @@
 </head>
 <body>
 <header>
-        <a href="../index.html"><img class="logo_marca" src="../assets/iconos/RLCStore logo negro.png" alt="logo marca"></a>
-        <nav>
-
-
-            <div class="menu_personalizado">
-                <ul>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>    
-
-                <div class="btn-group dropend">
-                    <button class=" button_personalizado dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Zapatillas</button>
-
-                    <ul class="dropdown-menu dropdown_personalizado">
-                        <li>
-                            <a class="dropdown-item item_personalizado" href="nike.html">Nike</a>
+        <nav class="navbar navbar-expand-lg menu_personalizado">
+            <div class="container-fluid">
+                <a href="../index.html"><img class="logo_marca" src="../assets/iconos/RLCStorelogonegro.png" alt="logo marca"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class='bx bx-menu bx-lg bx-burst-hover bx-border'></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item item_personalizado">
+                            <a class="item_personalizado" href="contacto.html">Contacto</a>
                         </li>
-                        <li>
-                            <a class="dropdown-item item_personalizado" href="vans.html">Vans</a>
+                        <li class="nav-item dropend item_personalizado">
+                            <a class="item_personalizado dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Zapatillas
+                            </a>
+                            <ul class="dropdown-menu dropdown_personalizado">
+                                <li>
+                                    <a class="dropdown-item item_personalizado" href="nike.html">Nike</a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item item_personalizado" href="vans.html">Vans</a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item item_personalizado" href="adidas.html">Adidas</a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item item_personalizado" href="converse.html">Converse</a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item item_personalizado" href="newbalance.html">New Balance</a>
+                                </li>
+                                
+                                
+                            </ul>
+                           
                         </li>
-                        <li>
-                            <a class="dropdown-item item_personalizado" href="adidas.html">Adidas</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item item_personalizado" href="converse.html">Converse</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item item_personalizado" href="newbalance.html">New Balance</a>
-                        </li>
+                       
                     </ul>
-                </div>
-
-            </div>
-            <div class="buscador">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Busca tu producto" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <form class="d-flex buscador" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                </div>
             </div>
         </nav>
 </header>
 
 <main>
-
+    <h1>Real Leghit Check</h1>
     <h2>Vans</h2>
     <section class="rtop_5">
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/vans/oldskool.jpeg" class="card-img-top" alt="Vans Old Skool Convencional">
-                <div class="card-body">
-                    <h4 class="card-title">Vans</h4>
-                    <h5 class="card-title">Old Skool</h5>
-                    
-                    <p>$250 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">Old Skool T</h2>
+                    <img src="../assets/zapatillas/vans/oldskool.jpeg" alt="Zapatilla Old Skool Tradicional">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Old Skool</li>
+                    <li class="list-group-itemm item2">Tradicional</li>
+                    <li class="list-group-itemm item3">$200 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/vans/oldskoolfnegra.jpeg" class="card-img-top" alt="Vans Old Skool Negra">
-                <div class="card-body">
-                    <h4 class="card-title">Vans</h4>
-                    <h5 class="card-title">Old Skool</h5>
-                    
-                    <p>$250 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">Old Skool</h2>
+                    <img src="../assets/zapatillas/vans/oldskoolfnegra.jpeg" alt="Zapatilla Old Skool All Black">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">Old Skool</li>
+                    <li class="list-group-itemm item2">All Black</li>
+                    <li class="list-group-itemm item3">$200 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/vans/authenticfnegra.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Vans</h4>
-                    <h5 class="card-title">U Authentic</h5>
-                    
-                    <p>$250 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">U Authentic</h2>
+                    <img src="../assets/zapatillas/vans/authenticfnegra.jpeg" alt="Zapatilla U Authentic All Black">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">U Authentic</li>
+                    <li class="list-group-itemm item2">All Black</li>
+                    <li class="list-group-itemm item3">$270 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/vans/authenticugris.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">vans</h4>
-                    <h5 class="card-title">U Authentic</h5>
-                    
-                    <p>$250 USD</p>                   
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">U Authentic</h2>
+                    <img src="../assets/zapatillas/vans/authenticugris.jpeg" alt="Zapatilla U Authentic Gris">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">U Authentic</li>
+                    <li class="list-group-itemm item2">Gris</li>
+                    <li class="list-group-itemm item3">$270 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/vans/authenticumarron.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Vans</h4>
-                    <h5 class="card-title">U Authentic</h5>
-                    
-                    <p>$250 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">U Authentic</h2>
+                    <img src="../assets/zapatillas/vans/authenticumarron.jpeg" alt="Zapatilla U Authentic Marron">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">U Authentic</li>
+                    <li class="list-group-itemm item2">Marrón</li>
+                    <li class="list-group-itemm item3">$270 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section class="nike_i">
-            <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/vans/authenticunegra.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Vans</h4>
-                    <h5 class="card-title">U Authentic</h5>
-                    
-                    <p>$250 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">U Authentic</h2>
+                    <img src="../assets/zapatillas/vans/authenticunegra.jpeg" alt="Zapatilla U Authentic Negra">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">U Authentic</li>
+                    <li class="list-group-itemm item2">Negro</li>
+                    <li class="list-group-itemm item3">$270 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/vans/authenticuroja.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Vans</h4>
-                    <h5 class="card-title">U Authentic</h5>
-                    
-                    <p>$250 USD</p>               
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">U Authentic</h2>
+                    <img src="../assets/zapatillas/vans/authenticuroja.jpeg" alt="Zapatilla U Authentic Roja">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">U Authentic</li>
+                    <li class="list-group-itemm item2">Roja</li>
+                    <li class="list-group-itemm item3">$270 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/vans/sk8low.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Vans</h4>
-                    <h5 class="card-title">Sk8-Low</h5>
-                    
-                    <p>$270 USD</p>
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">SK8-Low</h2>
+                    <img src="../assets/zapatillas/vans/sk8low.jpeg" alt="Zapatilla SK8 low">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">SK8-Low</li>
+                    <li class="list-group-itemm item2">Negro</li>
+                    <li class="list-group-itemm item3">$310 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-                <img src="../assets/zapatillas/vans/sk8lowblanca.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Vans</h4>
-                    <h5 class="card-title">Sk8-Low</h5>
-                    
-                    <p>$270 USD</p>                   
+        <div class="tarjeta">
+            <div class="tarjeta-frontal">
+                <div class="content">
+                    <h2 style="text-align: center;">SK8-Low</h2>
+                    <img src="../assets/zapatillas/vans/sk8lowblanca.jpeg" alt="Zapatilla SK8 Low Blanca">
                 </div>
+            </div>
+            <div class="tarjeta-trasera">
+                <ul class="list-groupp">
+                    <li class="list-group-itemm item1">SK8-Low</li>
+                    <li class="list-group-itemm item2">Blanco</li>
+                    <li class="list-group-itemm item3">$310 USD</li>
+                    <li class="list-group-itemm item4">41 42 43 44 45</li>
+                    <div class="card-actions">
+                        <a href="#" class=" item6">Add to cart</a>
+                    </div>
+                </ul>
+            </div>
         </div>
     </section>
 
 </main>
 
 <footer>
-    <img class="logo_footer" src="../assets/iconos/RLCStore logo negro.png" alt="foto logo">
+    <img class="logo_footer" src="../assets/iconos/RLCStorelogonegro.png" alt="foto logo">
 
     <ul>
         <li>
@@ -175,7 +275,7 @@
     </ul>
 </footer>
 
-
+<script src="../js/scripttarjeta.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

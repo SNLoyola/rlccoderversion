@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: nth($colores, 7);
+    // background-color: nth($colores, 7);
     height:71vh;
 }
 
@@ -14,6 +14,7 @@
     flex-direction: column;
     text-align: left;
     background-color: black;
+    border: 2px solid nth($colores, 3);
     border-radius: 25px;
     input, textarea, select{
         padding: 17px 25px;
