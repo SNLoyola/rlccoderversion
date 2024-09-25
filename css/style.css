@@ -149,22 +149,162 @@
 }
 .tarjeta-trasera .card-actions {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 10px;
 }
-.tarjeta-trasera .card-actions a {
+.tarjeta-trasera .card-actions button {
   text-decoration: none;
   padding: 5px 10px;
   background-color: #198754;
   color: white;
   border-radius: 5px;
-  margin-top: 35px;
+  margin-top: 5px;
 }
 .tarjeta.volteada .tarjeta-trasera {
   transform: translateX(0);
 }
 .tarjeta.volteada .tarjeta-frontal {
   transform: translateX(-100%);
+}
+
+/* Estilos para la ventana emergente */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal .modal-content {
+  background-color: black;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+.modal .modal-body {
+  display: flex;
+  gap: 20px;
+}
+.modal .image-section img {
+  max-width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.modal .text-section {
+  flex-grow: 1;
+  text-align: center;
+}
+.modal .text-section .add_button {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #198754;
+  color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.modal .close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .close:hover, .modal .close:focus {
+  color: #477967;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor del carrusel */
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+.carousel-container .prev-btn, .carousel-container .next-btn {
+  z-index: 10;
+}
+
+.carousel-image-section {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-image {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.active {
+  display: block;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.size-box {
+  border: 2px solid #333;
+  padding: 20px;
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.size-box h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.size-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+  gap: 10px;
+}
+
+.size-item {
+  padding: 10px;
+  background-color: #ddd;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.size-item:hover {
+  background-color: #7ad5b4; /* Color cuando se pasa el mouse */
+}
+
+.size-item:active {
+  background-color: #477967; /* Color al hacer clic */
 }
 
 @media (max-width: 768px) {
