@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // background-color: nth($colores, 7);
     height:71vh;
 }
 
@@ -17,7 +16,7 @@
     border: 2px solid nth($colores, 3);
     border-radius: 25px;
     input, textarea, select{
-        padding: 17px 25px;
+        padding: 7px;
         border-radius: 25px;
         margin-bottom: 20px;
         color: black;
@@ -97,4 +96,127 @@
             color: black;
         }
     }
+}
+
+@media (max-width: 768px){
+    
+    .contacto_body{
+       margin: 80px 0;
+    }
+    .form_container{
+        width: 500px;
+
+    }
+
+}
+
+@media (max-width: 992px){
+    
+    .contacto_body{
+       margin: 80px 0;
+    }
+    .form_container{
+        width: 500px;
+
+    }
+
+}
+
+@media (max-width: 412px){
+    
+    .contacto_body{
+       height: max-content;
+       margin: 0;
+    }
+    .form_container{
+    display: flex;
+    flex-direction: column;
+    // text-align: left;
+    background-color: black;
+    border: 2px solid nth($colores, 3);
+    border-radius: 25px;
+    input, textarea, select{
+        padding: 7px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        color: black;
+        background-color: #fff;
+        outline: none;
+        text-align: center;
+    }
+    input::placeholder, textarea::placeholder {
+        font-size: 14px;
+    }
+    label{
+        font-size: 15px;
+        font-weight: 500;
+        // margin-bottom: 15px;
+    }
+    form{
+        // padding: 20px 25px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        .usuario{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            .email{
+                width: 220px;
+            }
+        }
+        .procedencia{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            input{
+                appearance: textfield;
+            }
+            input[type=number] {
+                -moz-appearance: textfield; /* Para Firefox */
+                appearance: textfield; /* Para otros navegadores */
+            }
+            input[type=number]::-webkit-outer-spin-button,
+            input[type=number]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        .mensaje_box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 20px;
+            textarea{
+                width: 340px;
+                height: 220px;
+            }
+            .mensaje_box_item{
+                padding: 7px;
+            }
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: nth($colores, 4);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            align-self: center;
+            width: 100%;
+        }
+    }
+    select{
+        option{
+            color: black;
+        }
+    }
+}
+
 }
